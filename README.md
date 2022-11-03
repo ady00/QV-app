@@ -1,22 +1,14 @@
-# Quadratic Voting Frontend Application
+# QVoter
 
-## Demo
+Quadratic Voting is a novel method of polling in which a user 
+can not only vote for and against an issue, but also to the degree
+for which they wish to express their support. 
 
-This application is hosted on https://qv.geek.sg/
-
-## Development
-
-[Next.js](https://nextjs.org/) is used to generate a static site for the QV web application.
+## Running
 
 ```sh
 npm install
 npm run dev
 ```
 
-## Deployment
 
-Once the code is ready to be deployed, the static site will be built in the `out` folder.
-
-```sh
-npm run build
-```
