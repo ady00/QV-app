@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getElection } from "../src/services/qv";
 import { decryptElectionResults } from "../src/utils/electionDecrypt";
 
+
 const reduceVotes = (votersVotes) => {
   const score = {};
   votersVotes.forEach((voter) => {
@@ -29,9 +30,10 @@ const renderVotingResults = (election) => {
     (e1, e2) => e2.votes - e1.votes
   );
   const renderedVotes = candidates.map((candidate, id) => (
-    <div key={id} className="row text-center bg-light p-2">
+    <div id = "selenium" key={id} className="row text-center bg-light p-2">
       <div className="col-8">{candidate.title}</div>
       <div className="col-4">{candidate.votes}</div>
+
     </div>
   ));
   return (
