@@ -39,3 +39,4 @@ export const submitVotes = async (vote, userId) => {
     }
   }
 };
+
